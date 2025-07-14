@@ -29,7 +29,7 @@ public class BoardController {
 	public String register(BoardVO board, RedirectAttributes rttr) {
 		log.info(" ================= 보드 컨트롤러.register 실행한드아아아아아 =====================");
 		service.register(board);  // 객체 등록 성공시 이동할 경로
-		rttr.addAttribute("result", board.getBno());
+		rttr.addFlashAttribute("result", board.getBno());
 		return "redirect:/board/list";  // 성공하면 담 페이지 감 (리턴)
 	}
 	

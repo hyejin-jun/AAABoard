@@ -21,7 +21,7 @@ public abstract class BoardServiceImpl implements BoardService{  // 조원이 �
 		
 		log.info("============= 보드서비스Impl.register 메서드 실행한드아아아아아 ==================");
 		
-		mapper.insert(board);
+		mapper.insertSelectKey(board);
 		log.info("정상 등록 후 리스트 출력한드아아아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ");
 		mapper.getList2();
 	}

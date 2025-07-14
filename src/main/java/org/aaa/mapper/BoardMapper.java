@@ -14,13 +14,14 @@ public interface BoardMapper {
 	
 	public void insert(BoardVO board);
 	
+	public void insertSelectKey(BoardVO board);
+	
 	public BoardVO raed(Long bno);
 	
 	public int delect(long bno);
 	
 	public int update(BoardVO board);
 
-	public void insertSelectKey(BoardVO board);
-
+	
 
 }
